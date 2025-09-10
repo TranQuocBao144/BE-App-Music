@@ -1,0 +1,22 @@
+server:
+  port: 8085
+  servlet:
+    context-path: /artist
+#172.20.10.7
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=DemoMusic;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: 1
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    database-platform: org.hibernate.dialect.SQLServerDialect
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+    org.hibernate.hql.internal.ast.QueryTranslatorImpl: debug
