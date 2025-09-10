@@ -1,0 +1,46 @@
+server:
+  port: 8083
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: notification-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+        spring.json.add.type.headers: false
+        spring.json.value.default.type: com.example.notification_service.dto.UserStatusNotification
+
+#  mail:
+#    host: localhost
+#    port: 1025
+#    username: ""
+#    password: ""
+#    properties:
+#      mail.smtp.auth: false
+#      mail.smtp.starttls.enable: false
+#  mailhog:
+#    image: mailhog/mailhog
+#    ports:
+#      - "1025:1025"
+#      - "8025:8025"  # Cổng web UI
+  mail:
+    host: localhost
+    port: 1025
+    username:
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: false
+          starttls:
+            enable: false
+
+
+logging:
+  level:
+    org.springframework.kafka.listener: DEBUG
+    org.apache.kafka: WARN

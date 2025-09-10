@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/app-music/pom.xml" />
+        <option value="$PROJECT_DIR$/app-music/identity-service/identity-service/pom.xml" />
+        <option value="$PROJECT_DIR$/app-music/identity-service/pom.xml" />
+        <option value="$PROJECT_DIR$/app-music/profile-service/pom.xml" />
+        <option value="$PROJECT_DIR$/app-music/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/app-music/admin-service/pom.xml" />
+        <option value="$PROJECT_DIR$/app-music/notification-service/pom.xml" />
+        <option value="$PROJECT_DIR$/app-music/spring-ai-demo-main/pom.xml" />
+        <option value="$PROJECT_DIR$/app-music/chat-service/pom.xml" />
+        <option value="$PROJECT_DIR$/app-music/artist-service/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_22" project-jdk-name="openjdk-23 (2)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
